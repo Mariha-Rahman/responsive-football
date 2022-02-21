@@ -17,8 +17,8 @@ body{
  .container-detail{
     transition: transform 1.6s ease-in;
 }
-.container-detail:hover{
-    transform:rotate(360deg);
+.container:hover .container-detail{
+    transform:scale(1.2);
 }
 .container-detail span{
     color: white;
@@ -35,14 +35,17 @@ body{
     border-radius: 10px;
     font-weight: 600px;
     font-size: 20px;
+    margin-left: 45px;
     width: 400px;
     height: 150px;
+    transition: transform 2s ease-in-out;
 }
-.live-info:hover{
+
+.container:hover .live-info{
+    transform: rotate(360deg) scale(1.4);
     background-color: #f1075d;
     border: 10px solid whitesmoke;
     border-radius: 10px;
-    transition: 2s;
 }
 .live-info p{
     font-size: 50px;
@@ -54,20 +57,20 @@ body{
     font-size: 50px;
 }
 .container-banner{
-    transition: transform 3s;
+    transition: transform 2s ease-in-out;
 }
-.container-banner:hover{
+.container:hover .container-banner{
 transform: scale(1.1);
+border: 30px solid rgb(100, 55, 192);
+border-radius: 40px;
 }
 .container-banner img{
 width: 1998px;
 height: 1860px;
 }
-.container-banner:hover{
-    border: 30px solid rgb(100, 55, 192);
-    border-radius: 40px;
-}
+/* --------------------- */
 /* player sections */
+/* ------------------------- */
 .second-container{
     display: flex;
     justify-content: center;
@@ -110,12 +113,20 @@ height: 1860px;
 .player:hover h1{
     color: #f1075d;
 }
+hr{
+    width: 3700px;
+    margin-top: 160px;
+}
+hr:hover{
+    border: 7px solid purple;
+    background-color: blue;
+}
 /* third sections */
 .third-container{
     margin: 90px 0;
 }
 .third-container-title{
-    font-size: 96px;
+    font-size: 156px;
     text-align: center;
     color: rgb(238, 72, 11);
 }
@@ -130,6 +141,7 @@ height: 1860px;
     background-image: linear-gradient(orange,rgb(27, 231, 20));
     border: 18px solid rgb(190, 90, 14);
     border-radius: 30px; 
+    box-shadow: 7px 7px 5px rgba(119, 136, 153, 0.796);
     transition: transform 1s ease-in-out;
 }
 .leader:hover{
@@ -161,3 +173,151 @@ height: 1860px;
 .leader-detail h5{
     color: rgb(58, 55, 55);
 }
+/* footer sections */
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 190px;
+}
+.football-logo img{
+    width: 1500px;
+    height: 500px;
+}
+.icon img{
+    margin-right: 50px;
+    width: 110px;
+    height: 110px;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+}
+.copyright h2{
+    margin-right: 25px;
+}
+.copyright a{
+    margin-right: 25px;
+}
+/* addition */
+.venue-detail{
+    position: absolute;
+    top: 0;
+    font-size: 120px;
+    text-align: center;
+    background-color: rgba(240, 230, 140, 0.44);
+    display: none;
+}
+.venue-detail p{
+    text-align: justify;
+    padding: 50px 300px;
+    color: rgb(29, 29, 29);
+}
+.venue-detail h1{
+    background-color: #190dbd;
+    color: white;
+}
+.venue{
+    position: relative;
+    overflow: hidden;
+    margin: 300px 20px;
+}
+.venue:hover .venue-detail{
+    display: block;
+}
+.venue:hover img{
+    transform: scale(1.1);
+}
+.venue-image img{
+    width: 100%;
+    height: 2850px;
+    transition: transform 5s ease-in-out;
+}
+.venue:hover{
+   box-shadow: 10px 5px 10px rgba(128, 128, 128, 0.645);
+}
+/* meadia sections */
+/* for mobile */
+@media only screen and (max-width:688px){
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 8px;
+        width: 100%;
+        margin: 0;
+    }
+    .player-image img{
+        width: 380px;
+    }
+    .players p, h1{
+        font-size: 23px;
+        text-align: center;
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+        width: 400px;
+        height: 950px;
+        /* display: none; */
+    }
+    .container-banner img{
+        width: 380px;
+        height: 700px;
+    }
+    .container-info{
+        width: 100%;
+        font-size: 56px;
+    }
+    .container-detail span{
+        font-size: 58px;
+    }
+    .live-info a{
+font-size: 16px;
+    }
+    .live-info p{
+        font-size: 16px;
+    }
+    .live-info{
+        margin-left:110px ;
+        width: 150px;
+        height: 30px;
+    }
+
+    .footer-section{
+        width: 100%;
+    }
+    .leaders{
+        grid-template-columns:repeat(1, 1fr);
+    }
+    .leader-image img{
+        width: 380px;
+    }
+    .leader-detail h3{
+        font-size: 46px;
+    }
+    .third-container-title{
+        font-size: 50px;
+        margin: 0;
+    }
+    hr{
+        display: none;
+    }
+    .venue{
+        display: none;
+    }
+    
+    .football-logo img{
+        width: 100%;
+        height: 80px;
+    }
+    .icon img{
+        width: 18px;
+        height: 18px;
+        margin: 2px;
+    }
+    .copyright{
+        font-size: 15px;
+    }
+}
+/* meadia quary end*/
