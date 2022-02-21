@@ -12,12 +12,12 @@ body{
     align-items: center;
     background-color: rgb(79, 79, 202);
   width: 100%;
-    height: 1999px;
+    height: 2199px;
 }
  .container-detail{
-    transition: transform 3s;
+    transition: transform 1.6s ease-in;
 }
-.container:hover{
+.container-detail:hover{
     transform:rotate(360deg);
 }
 .container-detail span{
@@ -53,11 +53,60 @@ body{
     font-weight: 700px;
     font-size: 50px;
 }
+.container-banner{
+    transition: transform 3s;
+}
+.container-banner:hover{
+transform: scale(1.1);
+}
 .container-banner img{
-width: 1706.01px;
-height: 1600px;
+width: 1998px;
+height: 1860px;
 }
 .container-banner:hover{
     border: 30px solid rgb(100, 55, 192);
     border-radius: 40px;
+}
+/* player sections */
+.second-container{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr  );
+    justify-content: center;
+    grid-row-gap: 70px;
+    grid-column-gap: 70px;
+}
+.player-detail{
+    font-size: 53px;
+    padding: 40px;
+}
+.player-detail p{
+    color: rgb(93, 13, 13);
+}
+.player:hover p{
+    color: rgb(80, 78, 78);
+}
+.player-detail h1{
+    font-weight: 900px;
+}
+.player{
+    border: 40px solid rgb(245, 245, 242);
+    border-radius: 20px;
+    background-color:white;
+    box-shadow: 5px 5px 5px  rgb(189, 186, 186);
+}
+.player-image img{
+    padding: 20px;
+    border-radius: 30px;
+    margin: 30px;
+}
+.player:hover img{
+    border: 10px solid rgba(89, 88, 90, 0.933);
+}
+.player:hover h1{
+    color: #f1075d;
 }
