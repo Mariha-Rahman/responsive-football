@@ -1,0 +1,63 @@
+/* Common styles */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Heebo:wght@300&family=Poppins:wght@500&family=Roboto+Slab:wght@600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    background-color: rgba(238, 253, 253, 0.898);
+}
+/* headersections */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(79, 79, 202);
+  width: 100%;
+    height: 1999px;
+}
+ .container-detail{
+    transition: transform 3s;
+}
+.container:hover{
+    transform:rotate(360deg);
+}
+.container-detail span{
+    color: white;
+    font-size:100px ;
+    font-weight: 700px;
+    width: 150px;
+}
+.live-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:#E02C6D;
+    border-radius: 10px;
+    font-weight: 600px;
+    font-size: 20px;
+    width: 400px;
+    height: 150px;
+}
+.live-info:hover{
+    background-color: #f1075d;
+    border: 10px solid whitesmoke;
+    border-radius: 10px;
+    transition: 2s;
+}
+.live-info p{
+    font-size: 50px;
+}
+.live-info a{
+    color: white;
+    margin-left: 15px;
+    font-weight: 700px;
+    font-size: 50px;
+}
+.container-banner img{
+width: 1706.01px;
+height: 1600px;
+}
+.container-banner:hover{
+    border: 30px solid rgb(100, 55, 192);
+    border-radius: 40px;
+}
