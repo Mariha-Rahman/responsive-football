@@ -110,3 +110,54 @@ height: 1860px;
 .player:hover h1{
     color: #f1075d;
 }
+/* third sections */
+.third-container{
+    margin: 90px 0;
+}
+.third-container-title{
+    font-size: 96px;
+    text-align: center;
+    color: rgb(238, 72, 11);
+}
+.leaders{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 30px;
+    justify-content: center;
+    justify-items: center;
+}
+.leader{
+    background-image: linear-gradient(orange,rgb(27, 231, 20));
+    border: 18px solid rgb(190, 90, 14);
+    border-radius: 30px; 
+    transition: transform 1s ease-in-out;
+}
+.leader:hover{
+    transform: scale(1.1);
+}
+.leader-image img{
+    margin: 15px;
+    border: 10px solid rgb(223, 217, 217);
+    border-radius: 25px;
+}
+.leader-detail{
+    font-size: 50px;
+    text-align: center;
+}
+.leader-detail p{
+    background-color: blueviolet;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+}
+.leader-detail h3{
+    color: rgb(39, 38, 37);
+    font-size: 90px;
+}
+.leader-detail h2{
+    font-size: 96px;
+    color: #190dbd;
+}
+.leader-detail h5{
+    color: rgb(58, 55, 55);
+}
