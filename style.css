@@ -105,10 +105,10 @@ height: 1860px;
 .player-image img{
     padding: 20px;
     border-radius: 30px;
-    margin: 30px;
+    margin: 50px;
 }
 .player:hover img{
-    border: 10px solid rgba(89, 88, 90, 0.933);
+    border:3px solid rgba(89, 88, 90, 0.933);
 }
 .player:hover h1{
     color: #f1075d;
@@ -259,6 +259,8 @@ hr:hover{
         flex-direction: column;
         width: 400px;
         height: 950px;
+        transform: none;
+        transition: none;
         /* display: none; */
     }
     .container-banner img{
@@ -290,8 +292,11 @@ font-size: 16px;
     .leaders{
         grid-template-columns:repeat(1, 1fr);
     }
+    .leader{
+        transform: none;
+    }
     .leader-image img{
-        width: 380px;
+        width: 280px;
     }
     .leader-detail h3{
         font-size: 46px;
