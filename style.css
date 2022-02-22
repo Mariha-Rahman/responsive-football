@@ -138,7 +138,7 @@ hr:hover{
     justify-items: center;
 }
 .leader{
-    background-image: linear-gradient(orange,rgb(27, 231, 20));
+    background-image: linear-gradient(orange,rgb(25, 8, 177));
     border: 18px solid rgb(190, 90, 14);
     border-radius: 30px; 
     box-shadow: 7px 7px 5px rgba(119, 136, 153, 0.796);
